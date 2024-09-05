@@ -106,7 +106,7 @@ function onOpenCvReady() {
 
             let x, y, z;
             if (!singular) {
-              x = Math.atan2(rmat.data64F[7], rmat.data64F[8]);
+              x = Math.atan(rmat.data64F[7], rmat.data64F[8]);
               y = Math.atan2(-rmat.data64F[6], sy);
               z = Math.atan2(rmat.data64F[3], rmat.data64F[0]);
             } else {
@@ -128,17 +128,17 @@ function onOpenCvReady() {
           canvasCtx.fillStyle = "black";
           canvasCtx.font = "bold 30px Arial";
           canvasCtx.fillText(
-            "Roll: " + (180.0 * (roll / Math.PI)).toFixed(2),
+            "Nghiênggi: " + (180.0 * (roll / Math.PI)).toFixed(2),
             width * 0.8,
             50
           );
           canvasCtx.fillText(
-            "Pitch: " + (180.0 * (pitch / Math.PI)).toFixed(2),
+            "Gập - Duỗi: " + (180.0 * (pitch / Math.PI)).toFixed(2),
             width * 0.8,
             100
           );
           canvasCtx.fillText(
-            "Yaw: " + (180.0 * (yaw / Math.PI)).toFixed(2),
+            "Xoay: " + (180.0 * (yaw / Math.PI)).toFixed(2),
             width * 0.8,
             150
           );

@@ -128,12 +128,12 @@ function onOpenCvReady() {
           canvasCtx.fillStyle = "black";
           canvasCtx.font = "bold 30px Arial";
           canvasCtx.fillText(
-            "Nghiênggi: " + (180.0 * (roll / Math.PI)).toFixed(2),
+            "Nghiêng: " + (180.0 * (roll / Math.PI)).toFixed(2),
             width * 0.8,
             50
           );
           canvasCtx.fillText(
-            "Gập - Duỗi: " + (180.0 * (pitch / Math.PI)).toFixed(2),
+            "Gập-Duỗi: " + (180.0 * (pitch / Math.PI)).toFixed(2),
             width * 0.8,
             100
           );
